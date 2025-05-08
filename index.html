@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        :root {
+            --main-bg-color: #36393e;
+            --text-color: #ffffff;
+            --accent-color: #7289da;
+            --secondary-bg: #2f3136;
+            --hover-color: #5865f2;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: var(--main-bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+        
+        header {
+            background-color: var(--secondary-bg);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--text-color);
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--text-color);
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--hover-color);
+        }
+        
+        .nav-links a.active {
+            background-color: var(--accent-color);
+            color: white;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .content-section {
+            background-color: var(--secondary-bg);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 2rem;
+        }
+        
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+            color: var(--accent-color);
+        }
+        
+        .profile {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.image-grid img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* ensures square */
+  object-fit: cover;   /* fills the square and crops overflow */
+  border-radius: 8px;   /* optional: rounded corners */
+}
+        
+        .profile-info h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .profile-info h2 {
+            font-size: 1.3rem;
+            font-weight: normal;
+            color: #ddd;
+            margin-bottom: 1rem;
+        }
+        
+        .about-content {
+            line-height: 1.8;
+        }
+        
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        
+        .social-links a {
+            color: var(--text-color);
+            font-size: 1.3rem;
+            transition: color 0.3s ease;
+        }
+        
+        .social-links a:hover {
+            color: var(--accent-color);
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            background-color: var(--secondary-bg);
+            margin-top: 3rem;
+        }
+        
+        @media (max-width: 768px) {
+            .profile {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Kellan Markham | Portfolio</div>
+            <div class="nav-links">
+                <a href="#" class="active" id="about-link">About</a>
+                <a href="resume.html" id="resume-link">Resume</a>
+                <a href="C:\Users\janrv\OneDrive\Desktop\kellen\certification.html" id="certifications-link">Certifications</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container">
+        <main id="content">
+            <!-- About Section (default view) -->
+            <section id="about" class="content-section">
+                <div class="profile">
+                    <div class="image-grid">
+                        <img src="C:\Users\janrv\Downloads\kel.jpeg"></img>
+                    </div>
+                    <div class="profile-info">
+                        <h1>Kellan Markham</h1>
+                        <h2>Senior in Highschool</h2>
+                        <div class="social-links">
+                          
+                            <a href="#"><i>GitHub</i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-content">
+                    <h3 class="section-title">About Me</h3>
+                    <p>Hello!, My name is Kellan Markham I am a Junior at Waipahu High School. I am currently studying cybersecurity I am in the academy of Information Engineering and Technology. I come from Japanese decent. I enjoy gaming, cooking and helping my grandparents every chance I could get. I always dreamed of coding my own game and having millions of players play and enjoy it. </p>
+<br>
+ <p> I hope my portfolio goes more in depth in my success through out high school and my accomplishments. My career goal in life is to become a cybersecurity agent for the military. My present goal is to attend a four year collage and indulge myself more in coding and cybersecurity, maybe even get an internship at a company. My future goal is to code my own cybersecurity website and start my own cybersecurity company that will work closely with the military and regular people. </p>
+                </div>
+                <div class="about-content">
+                    <h3 class="section-title">Classes taken</h3>
+                    <p>ICS 426, PoliSci 120</p> 
+                </div>
+                <div class="about-content">
+                    <h3 class="section-title">Experience</h3>
+                    <p>Hawaii Annual Code Challenge, Honolulu Tech Week, Congressional App Challenge </p>
+                </div>
+            </section>
+            
+
+    <script>
+        // Make sure the About tab stays active on the main page
+        document.addEventListener('DOMContentLoaded', function() {
+            // Add event listener to About link to prevent navigation
+            document.getElementById('about-link').addEventListener('click', function(e) {
+                e.preventDefault();
+                // Set active class
+                document.querySelectorAll('.nav-links a').forEach(link => {
+                    link.classList.remove('active');
+                });
+                this.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>
